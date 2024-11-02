@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RoomDetailsBottomSheet</string>
+    <string name="button_aula">Aula</string>
 </resources>
