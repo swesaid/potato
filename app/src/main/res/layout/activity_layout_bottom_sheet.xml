@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottomSheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,7 +10,7 @@
     <!-- FrameLayout as container -->
     <FrameLayout
         android:id="@+id/iconAndImage"
-        android:layout_width="match_parent"
+        android:layout_width="425dp"
         android:layout_height="210dp">
 
         <!-- ConstraintLayout for flexible positioning -->
@@ -45,5 +46,112 @@
                 app:srcCompat="@drawable/ic_back_arrow" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/roomCapacity"
+            android:layout_width="107dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="25dp"
+            android:text="@string/room_capacity"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/roomLocation"
+            android:layout_width="107dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="25dp"
+            android:text="@string/room_location"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomCapacity" />
+
+        <TextView
+            android:id="@+id/roomCapacityValue"
+            android:layout_width="142dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/aula_capacity"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/roomCapacity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/roomLocationValue"
+            android:layout_width="142dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/aula_location"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/roomLocation"
+            app:layout_constraintTop_toBottomOf="@+id/roomCapacityValue" />
+
+        <TextView
+            android:id="@+id/roomType"
+            android:layout_width="77dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="25dp"
+            android:text="@string/room_type"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomLocation" />
+
+        <TextView
+            android:id="@+id/roomTypeValue"
+            android:layout_width="44dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/aula_type"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/roomType"
+            app:layout_constraintTop_toBottomOf="@+id/roomLocationValue" />
+
+        <TextView
+            android:id="@+id/roomDescription"
+            android:layout_width="407dp"
+            android:layout_height="131dp"
+            android:layout_marginTop="152dp"
+            android:justificationMode="inter_word"
+            android:text="@string/aula_description"
+            android:textColor="@color/room_description"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/seeTheSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/seeSchedule"
+            android:text="@string/button_see_schedule"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomDescription" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

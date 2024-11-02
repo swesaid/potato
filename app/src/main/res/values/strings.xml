@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">RoomDetailsBottomSheet</string>
     <string name="button_aula">Aula</string>
+    <string name="room_capacity">Capacity:</string>
+    <string name="aula_capacity">300–350 people</string>
+    <string name="room_location">Location:</string>
+    <string name="aula_location">Ground floor(0)</string>
+    <string name="room_type">Type:</string>
+    <string name="aula_type">Aula</string>
+    <string name="aula_description">The Aula at the Faculty of Mathematics and Computer Science is the largest room in the Faculty. It can accommodate over 300 students simultaneously and is designed for a variety of purposes, including lectures, special events, informational speeches, and examinations.</string>
+    <string name="button_see_schedule">See the Schedule</string>
 </resources>
