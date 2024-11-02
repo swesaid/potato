@@ -1,8 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/bottomSheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/bottom_sheet_background">
+
+    <!-- FrameLayout as container -->
+    <FrameLayout
+        android:id="@+id/iconAndImage"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <!-- ConstraintLayout for flexible positioning -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Room Image fills the entire ConstraintLayout -->
+
+            <!-- Back Icon with flexible positioning -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="430dp"
+                android:layout_height="209dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_rooom_aula_xxhdpi" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="49dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back_arrow" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
 </LinearLayout>

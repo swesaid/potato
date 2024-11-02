@@ -1,0 +1,14 @@
+<!-- res/drawable/ic_back_combined.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Red Frame Layer -->
+    <item
+        android:drawable="@drawable/ic_frame_arrow"
+        android:gravity="center" />
+
+    <!-- White Arrow Layer -->
+    <item
+        android:drawable="@drawable/ic_arrow"
+        android:gravity="center" />
+
+</layer-list>
